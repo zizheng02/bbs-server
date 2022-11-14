@@ -3,9 +3,14 @@
   "version": "1.0.0",
   "description": "华师大校园论坛（小程序）后端v1",
   "main": "index.js",
+  "scripts": {
+    "dev": "nodemon ./src/main.js"
+  },
   "author": "cookie",
   "license": "MIT",
   "dependencies": {
-    "koa": "^2.13.4"
+    "dotenv": "^16.0.3",
+    "koa": "^2.13.4",
+    "nodemon": "^2.0.20"
   }
 }
