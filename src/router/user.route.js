@@ -1,9 +1,7 @@
 const Router = require('koa-router')
-
+const { login } = require('../controller/user.controller')
 const router = new Router({prefix: '/users'})
 
-router.get('/',(ctx,next)=>{
-    ctx.body = 'hello user route'
-})
+router.get('/login',login)
 
 module.exports = router
